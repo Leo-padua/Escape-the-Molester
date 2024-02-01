@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape the Molester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="endGame"><span>You got raped</span>
+        <p>
+            Press 0 to restart
+        </p>
+    </div>
+    <div id="introScreen">
+        <div id="introScreenText">
+            ESCAPE THE MOLESTER!
+        <p style="padding: 5px 0 10px">Game mode:</p>
+        <div class="flexRow" style="margin-top: 5px">
+            <button id="survival" class="gameModeButton">SURVIVAL</button>
+            <button id="battle" class="gameModeButton">BATTLE</button>
+        </div>
+        </div>
+    </div>
+    <div id="player"></div>
+    <div id="outline"></div>
+    <div id="bullet"></div>
+    <div id="monsta"></div>
+    <div id="clip">
+        Ammo:<span id="clipCount" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></span>
+    </div>
+    <div id="hideLegend">Press "H" hide</div>
+    <div id="showLegend">Press "H" show</div>
+    <div id="legend">
+        <span>Press <span style="color: hsl(120, 100%, 50%)">WASD </span>to move</span>
+        <p>
+            <span style="color: hsl(30, 100%, 60%)">Arrow Keys </span>to shoot
+        </p>
+        <p>
+            Hold <span style="color: hsl(200, 100%, 70%)">Space </span>to boost
+        </p>
+        <p>
+            Press <span style="color: hsl(345, 100%, 55%)">"R" </span>to reload
+        </p>
+        <p>
+            Press <span style="color: hsl(60, 100%, 50%)">"0" </span>to restart
+        </p>
+    </div>
+    <div id="colorLegend">
+        Player color (press Key):<span style="color: hsl(140, 90%, 40%)">G</span>
+        <span style="color: hsl(240, 90%, 60%)">B</span>
+        <span style="color: hsl(30, 90%, 40%)">K</span>
+        <span style="color: hsl(60, 90%, 40%)">N</span>
+        <span style="color: hsl(0, 90%, 40%)">J</span>
+        <span style="color: hsl(160, 90%, 40%)">M</span>
+    </div>
+    <div id="jail">
+        <div class="jailBar"></div>
+        <div class="jailBar"></div>
+        <div class="jailBar"></div>
+        <div class="jailBar"></div>
+    </div>
+    <div id="escape">
+        Escape the <span style="font-size: 2em">Molester</span>
+    </div>
+    <div id="timer">
+        Survived<span id="timerCount">0</span>seconds
+    </div>
+    <div id="winScreen">You escaped!
+        <p>
+            press "0" to restart
+        </p>
+    </div>
+    <div id ="myRecord">Creator's record: 105sec</div>
+    <div id="startInstructions">The molester is british.... don't let that slide.... shoot him</div>
+    <canvas id="canvas"></canvas>
+    <audio id="backgroundMusic" src="Disguise.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
